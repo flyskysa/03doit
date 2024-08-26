@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그림책칵테일</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>그림책칵테일</h1>
+    <div id="season-selection">
+        <h2>1. 그림책을 선택하세요.</h2>
+        <button class="season-button spring" onclick="showColors('spring')">봄이 좋다</button>
+        <button class="season-button summer" onclick="showColors('summer')">여름이 좋다</button>
+        <button class="season-button fall" onclick="showColors('fall')">가을이 좋다</button>
+        <button class="season-button winter" onclick="showColors('winter')">겨울이 좋다</button>
+    </div>
+
+    <div id="color-selection" style="display: none;">
+        <h2>2. 색상을 선택하세요.</h2>
+        <button class="color-button pink" onclick="showResult('pink')">핑크</button>
+        <button class="color-button lightgreen" onclick="showResult('lightgreen')">연두</button>
+        <button class="color-button yellow" onclick="showResult('yellow')">노랑</button>
+        <button class="color-button green" onclick="showResult('green')">초록</button>
+        <button class="color-button brown" onclick="showResult('brown')">갈색</button>
+        <button class="color-button red" onclick="showResult('red')">빨강</button>
+        <button class="color-button blue" onclick="showResult('blue')">파랑</button>
+        <button class="color-button white" onclick="showResult('white')">흰색</button>
+    </div>
+
+    <div id="result" style="display: none;">
+        <h2>3. 당신은...</h2>
+        <p id="result-text"></p>
+        <img id="result-image" src="" alt="" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
